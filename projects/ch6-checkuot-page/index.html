@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Gallery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="devchallenges.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Checkout</h1>
+    </header>
+    <main>
+      <form action="/action_page.php" class="checkout-form">
+        <div class="contact">
+          <h2 class="subtitle">Contact information</h2>
+          <div class="mail">
+            <label for="" class="mail-title">E-mail</label>
+            <input
+              type="email"
+              id="input-mail"
+              name="mail"
+              value="Enter your email..."
+            />
+          </div>
+          <div class="phone">
+            <label for="" class="phone-title">Phone</label>
+            <input
+              type="tel"
+              id="input-phone"
+              name="phone"
+              value="Enter your phone..."
+            />
+          </div>
+        </div>
+        <div class="shipping">
+          <h2 class="subtitle">Shipping address</h2>
+          <div class="name">
+            <label for="" class="name-title">Full name</label>
+            <input
+              type="text"
+              id="input-name"
+              name="name"
+              value="Rodney Cotton"
+            />
+          </div>
+          <div class="address">
+            <label for="" class="address-title">Address</label>
+            <input
+              type="text"
+              id="input-address"
+              name="address"
+              value="Your address.."
+            />
+          </div>
+          <div class="city">
+            <label for="" class="city-title">City</label>
+            <input
+              type="text"
+              id="input-city"
+              name="city"
+              value="Your city.."
+            />
+          </div>
+          <div class="wrap-country_post">
+            <div class="country">
+              <label for="" class="country-title">Country</label>
+              <select name="country" id="country-id">
+                <option value="you-country">Your country..</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="Russia">Russia</option>
+                <option value="Ukrane">Ukrane</option>
+              </select>
+            </div>
+            <div class="postal_ode">
+              <label for="" class="postal_code-title">Postal code</label>
+              <input
+                type="text"
+                id="input-postal_code"
+                name="postal_code"
+                value="Your postal code.."
+              />
+            </div>
+          </div>
+          <div class="safe_info">
+            <input
+              type="checkbox"
+              id="safe_info"
+              name="safe_info"
+              value="yes"
+            />
+            <span class="safe_info-text">
+              Save this information for next time
+            </span>
+          </div>
+        </div>
+        <button class="continue">Continue</button>
+      </form>
+      <section class="cart">
+        <div class="product">
+          <img src="photo1.png" class="product-photo" alt="" />
+          <div class="product-info">
+            <p class="product-name">Vintage Backbag</p>
+            <div class="product-price">
+              <span class="product-price-new">$54.99</span>
+              <span class="product-old-price">$94.99</span>
+            </div>
+            <input type="number" class="mod" id="" name="" />
+          </div>
+        </div>
+        <div class="product">
+          <img src="photo2.png" class="product-photo" alt="" />
+          <div class="product-info">
+            <p class="product-name">Levi Shoes</p>
+            <div class="product-price">
+              <span class="product-price-new">$74.93</span>
+              <span class="product-old-price">$124.99</span>
+            </div>
+            <input type="number" class="mod" id="" name="" />
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="cart-shipping">
+          <p class="cart-shipping-text">Shipping</p>
+          <p class="cart-shipping-price">$19</p>
+        </div>
+        <div class="cart-total">
+          <span class="cart-total-text">Total</span>
+          <span class="cart-total-price">$148.98</span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      created by <a href="devChallenges.io"><b>username</b></a> -
+      devChallenges.io
+    </footer>
+  </body>
+</html>

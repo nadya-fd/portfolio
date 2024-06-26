@@ -1,0 +1,181 @@
+* {
+  margin: 0px;
+  margin-block: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  font: 600 24px 'Montserrat', sans-serif;
+  color: #4e5150;
+  margin: 20px 0 10px 0;
+}
+
+.posts {
+  width: 100px;
+  height: 67px;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  margin: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  font: 600 18px 'Montserrat', sans-serif;
+  color: #4e5150;
+}
+
+.title {
+  font: 600 14px 'Montserrat', sans-serif;
+  color: #bdbdbd;
+}
+
+.location {
+  font: 600 14px 'Montserrat', sans-serif;
+  color: #a9a9a9;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.profilePhoto {
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    'image1 image2 image2'
+    'image3 image3 image4'
+    'image5 image6 image4';
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+
+.img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.image1 {
+  grid-area: image1;
+  background: url(photo1.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.image2 {
+  grid-area: image2;
+  background: url(photo2.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.image3 {
+  grid-area: image3;
+  background: url(photo3.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.image4 {
+  grid-area: image4;
+  background: url(photo4.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.image5 {
+  grid-area: image5;
+  background: url(photo5.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.image6 {
+  grid-area: image6;
+  background: url(photo6.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+footer,
+footer a {
+  color: #b9bdcf;
+  font: 500 14px Montserrat, sans-serif;
+  margin: 170px 0 40px 0;
+}
+
+@media (max-width: 390px) {
+  .profilePhoto {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+  }
+  .name {
+    font-size: 14px;
+    margin: 15px 0 7px 0;
+  }
+  .location {
+    font-size: 10px;
+  }
+  .number {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 12px;
+  }
+
+  .posts {
+    width: 78px;
+    height: 52px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+  }
+
+  body {
+    width: 95%;
+  }
+  main {
+    grid-gap: 7px;
+    margin-top: 0px;
+  }
+  footer,
+  footer a {
+    margin-bottom: 20px;
+  }
+}

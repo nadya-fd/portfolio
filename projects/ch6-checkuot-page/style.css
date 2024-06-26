@@ -1,0 +1,308 @@
+* {
+  margin: 0px;
+  margin-block: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  padding: 0 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* if direction: grid
+  width: 80%;*/
+/*}*/
+
+/*
+header {
+  /* alignment
+  padding-left: 50px;
+  */
+/*}
+*/
+main {
+  /* if direction: grid
+  display: grid;
+  grid-gap: 7%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'checkout shopping-cart';
+  */
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: start;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title {
+  font: 600 36px Montserrat;
+  color: #4e5150;
+  margin: 50px 0;
+}
+
+.subtitle {
+  font: 600 18px Montserrat;
+  color: #333333;
+}
+
+.checkout-form {
+  /*grid-area: checkout;*/
+  display: flex;
+  flex-direction: column;
+  /* alignment
+  margin-left: 50px;
+  margin-right: 50px;
+  */
+  margin-top: 50px;
+}
+
+.contact {
+  margin-bottom: 40px;
+}
+
+label,
+.safe_info-text {
+  font: 600 12px Montserrat;
+  color: #4f4f4f;
+  padding: 15px 0 6px 0;
+}
+
+label {
+  display: block;
+}
+
+input,
+select {
+  display: block;
+  height: 56px;
+  border-radius: 12px;
+  border: 1px #828282 solid;
+}
+
+input[value],
+select {
+  font: 600 16px Montserrat;
+  color: #828282;
+  padding-left: 50px;
+}
+
+#input-mail {
+  background-image: url(icons/mail.svg);
+}
+
+#input-phone {
+  background-image: url(icons/phone.svg);
+}
+#input-name {
+  background-image: url(icons/name.svg);
+}
+#input-address {
+  background-image: url(icons/address.svg);
+}
+#input-city {
+  background-image: url(icons/city.svg);
+}
+
+.wrap-country_post {
+  display: flex;
+}
+
+#input-postal_code {
+  background-image: url(icons/postal_code.svg);
+}
+#country-id {
+  background-image: url(icons/country.svg);
+}
+
+.country {
+  margin-right: 20px;
+}
+
+#input-mail,
+#input-phone,
+#input-address,
+#input-name,
+#input-city,
+#input-postal_code,
+#country-id {
+  background-repeat: no-repeat;
+  background-size: 30px 55px;
+  background-position-x: 10px;
+  width: 100%;
+}
+
+.safe_info {
+  margin: 20px 10px 20px 0px;
+}
+
+#safe_info {
+  padding-left: 0px;
+  display: inline-block;
+  margin-right: 20px;
+  width: 21px;
+  height: 21px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  vertical-align: middle;
+}
+
+.continue {
+  padding: 20px 50px;
+  background-color: #f2994a;
+  font: 600 16px Montserrat;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  align-self: flex-end;
+}
+
+input[type='number'] {
+  /*for absolutely positioning spinners*/
+  padding: 20px 0px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+/*Spin Buttons modified */
+input[type='number'].mod::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  background: rgb(202, 200, 200) url('plus.svg') no-repeat center center;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  opacity: 0.7; /* shows Spin Buttons per default (Chrome >= 39)*/
+}
+
+input[type='number'].mod::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  background: rgb(202, 200, 200) url('minus.svg') no-repeat center center;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  opacity: 0.7; /* shows Spin Buttons per default (Chrome >= 39)*/
+}
+
+.cart {
+  /* grid-area: shopping-cart; */
+  /* alignment
+  margin-left: 50px;
+  margin-right: 50px;
+  */
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.product {
+  display: flex;
+  font: 600 16px Montserrat;
+  color: #4e5150;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+.product-price {
+  padding-bottom: 30px;
+}
+
+.product-price-new {
+  font: 600 16px Montserrat;
+  color: #f2994a;
+}
+
+.product-old-price {
+  font: 600 12px Montserrat;
+  color: #4e5150;
+  text-decoration-line: line-through;
+}
+
+.product-photo {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 0.8rem;
+  margin: 0 25px 25px 0px;
+}
+
+.cart-shipping,
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px #bdbdbd solid;
+  padding: 10px 0px;
+  color: #333333;
+}
+
+.cart-total-text,
+.cart-shipping-text {
+  font: 600 18px Montserrat;
+}
+
+.cart-total-price,
+.cart-shipping-price {
+  font: 600 14px Montserrat;
+}
+
+footer,
+footer a {
+  color: #b9bdcf;
+  font: 500 14px Montserrat, sans-serif;
+
+  text-align: center;
+  margin: 140px 0 30px 0;
+}
+
+@media (max-width: 793px) {
+  .cart {
+    margin-left: 0px;
+  }
+  .checkout-form {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 900px) {
+  /*
+  body {
+    width: 100vw;
+  }
+*/
+  main {
+    flex-direction: column-reverse;
+    justify-content: stretch;
+    align-items: normal;
+    flex-wrap: nowrap;
+  }
+  /*
+  .cart {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  */
+}

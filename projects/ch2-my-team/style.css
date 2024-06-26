@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  margin-block: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-block: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 337px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+#images-wrap {
+  justify-content: space-between;
+}
+#testmonial-wrap {
+  padding-top: 71px;
+  padding-bottom: 38px;
+  row-gap: 38px;
+}
+.title h1 {
+  font-family: 'PT Serif', serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46.58px;
+  letter-spacing: -0.045em;
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.testimonials h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+.testimonials p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.image-container {
+  max-width: 156px;
+}
+
+img {
+  width: 90%;
+}
+
+.img2,
+.img4,
+.img6 {
+  padding-top: 64px;
+}
+
+.emp_title {
+  font-family: 'PT Serif', serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.94px;
+  text-transform: uppercase;
+  transform: rotateZ(90deg) translateX(-134px) translateY(-73px);
+}
+
+.emp_name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+footer,
+footer a {
+  color: #b9bdcf;
+  font: 500 14px Montserrat, sans-serif;
+  margin: 120px 0 40px 0;
+  text-align: center;
+}
+
+@media (min-width: 878px) {
+  .container {
+    max-width: 900px;
+  }
+  .img2,
+  .img4,
+  .img6 {
+    padding-top: 0px;
+  }
+  .img2,
+  .img5 {
+    padding-top: 126px;
+  }
+  .title {
+    width: 49%;
+  }
+  .testimonials {
+    width: 49%;
+  }
+  .testimonials p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .image-container {
+    max-width: 264px;
+  }
+  .emp_title {
+    font-size: 12px;
+    line-height: 15.53px;
+    transform: rotateZ(90deg) translateX(-222px) translateY(-128px);
+  }
+  .emp_name {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  #testmonial-wrap {
+    padding-top: 110px;
+    padding-bottom: 96px;
+  }
+  footer,
+  footer a {
+    margin-bottom: 20px;
+  }
+}
